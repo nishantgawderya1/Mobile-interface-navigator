@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Interface Navigator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #E0E2F4;
+            font-family: Arial, sans-serif;
+        }
+        
+        .appnavigator {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-profile {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .List-options {
+            list-style: none;
+            padding: 0;
+        }
+
+        .List-options li {
+            padding: 10px 0;
+            border-bottom: 1px solid #E0E2F4;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .List-options li:hover {
+            color: #007BFF;
+        }
+
+        .List-options li:last-child {
+            border-bottom: none;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .nav-bar div {
+            width: 24px;
+            height: 24px;
+            background-color: #E0E2F4;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .nav-bar div:hover {
+            background-color: #D1D5E0;
+        }
+
+        .List-options li {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 15px; /* Space between icon and text */
+        }
+
+        .List-options li i {
+            font-size: 18px; /* Adjust icon size */
+        }      
+
+        .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.nav-bar div {
+    width: 40px; /* Increased size for better visibility */
+    height: 40px;
+    background-color: #E0E2F4;
+    border-radius: 50%;
+    display: flex; /* Center icons */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar div i {
+    font-size: 18px; /* Adjust icon size */
+    color: #4A4A4A; /* Dark gray text color */
+}
+
+.nav-bar div:hover {
+    background-color: #D1D5E0;
+    color: #007BFF; /* Change text color on hover */
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="appnavigator">
+        <header>
+            <div class="header-profile">
+                <img class="image-profile" src="img-corner.png" alt="Profile picture">
+                <div>
+                    <h2>Nishant Gawderya</h2>
+                    <h3>B.Tech CSE Student</h3>
+                </div>
+            </div>
+        </header>
+        <main>
+            <ul class="List-options">
+                <li><i class="fas fa-user"></i> Personal Data</li>
+                <li><i class="fas fa-envelope"></i> Messages</li>
+                <li><i class="fas fa-bell"></i> Notifications</li>
+                <li><i class="fas fa-map-marker-alt"></i> Location</li>
+                <li><i class="fas fa-users"></i> Community</li>
+                <li><i class="fas fa-question-circle"></i> FAQs</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+            </ul>
+        </main>
+        <nav>
+            <div class="nav-bar">
+                <div class="Home">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="Analytics">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="Messages">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="Profiles">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
